@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    
+}
+
+header {
+    background-color: #088cff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+@media (max-width: 800px) {
+    main {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}
+
+.producto {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.producto img {
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    max-height: 200px;
+    object-fit: contain;
+}
+
+.producto .info {
+    padding: 10px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.producto h2 {
+    margin-top: 0;
+}
+
+.producto p {
+    margin: 5px 0;
+    flex-grow: 1;
+}
+
+.producto button {
+    background-color: hsl(208, 100%, 52%);
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    margin-top: auto;
+}
+
+.producto button:hover {
+    background-color: #555;
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 10px; 
+    }
+
+    main {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    }
+
+    .producto img {
+        max-height: 150px; 
+    }
+
+    .producto button {
+        padding: 5px; 
+        font-size: 12px; 
+    }
+
+    #carrito {
+        padding: 10px;
+    }
+}
+
+
+
+#carrito {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  #listaCarrito li {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+  }
+  
+  #listaCarrito li:hover {
+    background-color: #f0f0f0;
+  }
+  
+  #total {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+
+  #carrito button {
+    background-color: hsl(208, 100%, 52%);
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border-radius: 5px;
+  }
+  
+  #carrito button:hover {
+    background-color: #555;
+  }
+  
