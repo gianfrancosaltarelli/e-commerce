@@ -25,7 +25,7 @@ const productos = [
   },
   {
     id: 2,
-    foto: "https://cdn.shopify.com/s/files/1/0055/6400/6434/products/51Mov6F8z5L_800x_2cccac65-8649-4cf8-9bb7-eefc1feafc29_300x.jpg?v=1602717301",
+    foto: "https://www.venex.com.ar/products_images/1608644492_22868cbc25d88f5daa013c0d4582e3f63858cc874d669e17d503f6fec2a0b71b.jpg",
     nombre: "Smart Watch Imilab",
     precio: 5900,
   },
